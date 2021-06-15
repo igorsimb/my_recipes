@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4d2351f-dd18-4f4a-86d8-8083a64c6a66" name="Default Changelist" comment="" />
+    <list default="true" id="d4d2351f-dd18-4f4a-86d8-8083a64c6a66" name="Default Changelist" comment="Touched up on various small design features.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shag/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/shag/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +23,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -86,7 +89,8 @@
       <workItem from="1623680651890" duration="26516000" />
       <workItem from="1623710996037" duration="358000" />
       <workItem from="1623713169607" duration="469000" />
-      <workItem from="1623716236120" duration="14139000" />
+      <workItem from="1623716236120" duration="14623000" />
+      <workItem from="1623766655912" duration="886000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1623709160125</created>

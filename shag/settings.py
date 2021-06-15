@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)edhf*z*n*s*j!*08ah!3k#+*h5o--c8y_(=i%@o(+b501%dkk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['forshag.pythonanywhere.com']
+ALLOWED_HOSTS = ['forshag.pythonanywhere.com', 'localhost']
 
 
 # Application definition
@@ -122,6 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '/home/forshag/shag_homework_l34/static'
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
