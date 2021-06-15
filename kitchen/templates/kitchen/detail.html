@@ -1,0 +1,42 @@
+{% extends 'kitchen/base.html' %}
+
+
+{% block content %}
+
+<a class="fs-5 bg-dark text-white text-decoration-none" href="{% url 'index' %}">&#8592; Назад</a>
+
+{#    <h2>{{ recipes.name }}</h2>#}
+{#    <p>Автор рецепта: {{ recipes.author }}</p>#}
+{#    <p>Тип: {{ recipes.type }}</p>#}
+{#    <p>Опиcание: {{ recipes.description }}</p>#}
+{#    <p>Ингредиенты: {{ recipes.ingredients }}</p>#}
+{#    <p>Страна: {{ recipes.country }}</p>#}
+
+
+ <div class="card mx-auto border-dark shadow shadow w-75 h-100" >
+    <div class="d-flex">
+        <div class="card-header flex-grow-1 fs-3 text-center">
+            Рецепт "{{ recipes.name }}"
+        </div>
+        <div class="card-header px-1">
+            <a class="link-secondary text-decoration-none" style="font-size: 1.3rem;"
+               title="Редактировать Рецепт" href="{% url 'update' recipes.id %}?next={{ request.path }}">&#9998;</a>
+        </div>
+        <div class="card-header px-1">
+            <a class="btn btn-close text-danger"  title="Удалить Рецепт" href="{% url 'delete' recipes.id %}"></a>
+{# <a class="badge text-danger text-decoration-none m-0 p-0" title="Удалить Рецепт" href="#">&#10060;</a>#}
+        </div>
+
+    </div>
+  <div class="card-body text-dark">
+      <h5 class="card-title text-muted">{{ recipes.author }} ({{ recipes.country}})</h5>
+      <h5 class="article-title">Ингредиенты:</h5>
+      <div class="w-25"><hr></div>
+      <p class="card-text article-content">{{ recipes.ingredients|linebreaks }}<p>
+      <h5 class="article-title">Описание:</h5>
+      <div class="w-25"><hr></div>
+    <p class="card-text article-content">{{ recipes.description|linebreaks }}<p>
+  </div>
+</div>
+
+{% endblock content %}

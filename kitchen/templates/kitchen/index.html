@@ -1,0 +1,46 @@
+{% extends 'kitchen/base.html' %}
+
+
+{% block content %}
+
+
+<div class="row mx-auto w-100">
+    <div class="col">
+        <h1 class="text-center text-light mb-0 mt-2 text-outline" style="font-size: 4rem;">Лучшие рецепты мира</h1>
+        <h1 class="text-start plus p-0 m-0">
+            <a class="link-success text-decoration-none"
+               href="{% url 'create' %}" title="Добавить Рецепт">&plus;</a>
+        </h1>
+    </div>
+</div>
+
+
+<div class="row mx-auto w-100 row-cols-3 g-3">
+        {% for recipe in recipes %}
+            <div class="col">
+                <div class="card border-dark shadow shadow w-100">
+                    <div class="d-flex">
+                        <div class="card-header flex-grow-1 fs-5">
+                            <a class="link-primary text-decoration-none" href="{% url 'detail' recipe.id %}">{{ recipe.name }}</a>
+                        </div>
+                        <div class="card-header px-1">
+                            <a class="link-secondary text-decoration-none" style="font-size: 1.3rem;" title="Редактировать Рецепт" href="{% url 'update' recipe.id %}">&#9998;</a>
+                        </div>
+                        <div class="card-header px-1">
+                            <a class="btn btn-close text-danger"  title="Удалить Рецепт" href="{% url 'delete' recipe.id %}"></a>
+{#                            <a class="badge text-danger text-decoration-none m-0 p-0" title="Удалить Рецепт" href="{% url 'delete' recipe.id %}">&#10060;</a>#}
+                        </div>
+
+                    </div>
+                  <div class="card-body text-dark">
+                    <h5 class="card-title">{{ recipe.author }}</h5>
+                    <p class="card-text">{{ recipe.description|make_list|slice:':150'|join:'' }}...</p>
+                  </div>
+                </div>
+            </div>
+
+        {% endfor %}
+</div>
+
+
+{% endblock content %}

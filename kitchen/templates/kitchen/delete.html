@@ -1,0 +1,16 @@
+{% extends 'kitchen/base.html' %}
+{#{% block title %}Удалить "{{recipes.name}}" {% endblock title %}#}
+
+{% block content %}
+
+    <h2 class="text-outline pt-3 mt-3">Вы уверены, что хотите удалить рецепт "{{ recipes.name }}"?</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button class="btn btn-danger" type="submit">Да, удалить</button>
+        <a class="btn btn-secondary" href="{% url 'index' %}">Отмена</a>
+    </form>
+
+{% endblock content %}
+
+{# "{{ recipes.name }}"#}
