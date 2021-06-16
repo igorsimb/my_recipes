@@ -1,5 +1,5 @@
 # Домашнее задание homework_l34
-И заодно тренировка написания readme.md
+И заодно тренировка деплоя и написания readme.md
 
 <img src="https://i.imgur.com/BthC3Sw.jpeg" alt='Лучшие рецепты мира' width='50%'/>
 
