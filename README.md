@@ -52,7 +52,7 @@ RecipesApplication
 ## Сделано с помощью
 * Django
 * Bootstrap 5
-* Django Crispy Forms
+* django-crispy-forms
 
 ## Перед началом работы
 
