@@ -1,10 +1,6 @@
 # Домашнее задание homework_l34
-И заодно практика деплоя и написания readme.
 
 <img src="https://i.imgur.com/BthC3Sw.jpeg" alt='Лучшие рецепты мира' width='50%'/>
-
-## Деплой
-Рабочий деплой задания находится на [http://forshag.pythonanywhere.com](http://forshag.pythonanywhere.com)
 
 ## Задание
 
