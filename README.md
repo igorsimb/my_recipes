@@ -1,4 +1,4 @@
-# Домашнее задание homework_l34
+# Ваши рецепты
 
 <img src="https://i.imgur.com/BthC3Sw.jpeg" alt='Лучшие рецепты мира' width='50%'/>
 
