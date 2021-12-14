@@ -22,7 +22,10 @@
 
 
   </head>
-  <body>
+  <body style="background: url('{% static "kitchen/bg.webp" %}');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed">
   <div class="container">
       {% block content %} {% endblock %}
   </div>
